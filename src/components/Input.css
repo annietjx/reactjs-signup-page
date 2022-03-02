@@ -17,8 +17,11 @@ input {
     border-radius: 8px;
     padding: 0 1rem;
     transition: all 0.2s ease-in;
-    /*add hover to transformation here*/
 
+}
+
+input:hover {
+    transform: translateY(-3px);
 }
 
 /* circles next to the input box */
@@ -28,5 +31,13 @@ input {
     background: #9d9d9d;
     border-radius: 10px;
     margin-left: 1rem;
-    /*add change color after input*/
+}
+
+/*status change color after interaction*/
+input:hover + .Status {
+    background: #E6A2AA;
+}
+
+input:valid + .Status {
+    background: #6E9FA2;
 }
